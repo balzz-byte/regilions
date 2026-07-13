@@ -1,3 +1,17 @@
+
+// ==========================
+// LOADING SCREEN LOGIC
+// ==========================
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add("fade-out");
+            document.body.classList.add("loaded");
+        }, 800); // 800ms delay to display the glowing logo beautifully
+    }
+});
+
 const header = document.getElementById("header");
 const sections = document.querySelectorAll("section, footer");
 const navLinks = document.querySelectorAll(".nav-menu a");
